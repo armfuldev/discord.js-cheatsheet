@@ -27,16 +27,6 @@ Make sure you learn from this, I don't suggest copy pasting.
 
 ---
 
-```js
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-const token = 'your-token-here';
-var inviteLink = 'bot-invite-link';
-```
-
----
-
 ## Channel events:
 
 // channelCreate
@@ -515,7 +505,7 @@ client.on("userNoteUpdate", function(user, oldNote, newNote){
 });
 ```
 
-#### userUpdate
+### userUpdate
 ##### Emitted whenever a user's details (e.g. username) are changed.
 
 |  PARAMETER  |    TYPE  |             DESCRIPTION         |
@@ -529,7 +519,7 @@ client.on("userUpdate", function(oldUser, newUser){
 });
 ```
 
-#### voiceStateUpdate
+### voiceStateUpdate
 ##### Emitted whenever a user changes voice state - e.g. `joins/leaves a channel, mutes/unmutes`.
 
 |  PARAMETER  |    TYPE     |                 DESCRIPTION                  |
@@ -543,7 +533,7 @@ client.on("voiceStateUpdate", function(oldMember, newMember){
 });
 ```
 
-#### warn
+### warn
 ##### Emitted for general warnings. 
 
 | PARAMETER   | TYPE     | DESCRIPTION    |
