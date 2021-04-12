@@ -33,7 +33,7 @@ Make sure you learn from this, I don't suggest copy pasting.
 
 ## Channel Events:
 
-### channelCreate [⮥](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelCreate [🠹](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
 ##### Emitted whenever a channel is created.
 
 ```js
