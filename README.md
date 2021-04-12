@@ -15,17 +15,17 @@ Make sure you learn from this, I don't suggest copy pasting.
   -  channelDelete
   -  channelPinsUpdate
   -  channelUpdate
-- Client User events:
+- [Client User events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)
   - clientUserGuildSettingsUpdate
   - clientUserSettingsUpdate
-- Debug events:
+- [Debug events:]()
   - debug
-- WebSocket events:
+- [WebSocket events:]()
   - disconnect
   - reconnecting
   - resume
 
-## Channel events:
+## Channel Events:
 
 // channelCreate
 // Emitted whenever a channel is created.
@@ -73,7 +73,7 @@ client.on("channelUpdate", function(oldChannel, newChannel){
 });
 ```
 
----
+## Client User Events:
 
 // clientUserGuildSettingsUpdate
 // Emitted whenever the client user's settings update.
