@@ -41,7 +41,7 @@ Make sure you learn from this, I don't suggest copy pasting.
 
 ## Channel Events:
 
-### channelCreate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelCreate
 ##### Emitted whenever a channel is created.
 
 ```js
@@ -53,7 +53,7 @@ client.on("channelCreate", function(channel){
 });
 ```
 
-### channelDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelDelete
 #### Emitted whenever a channel is deleted.
 
 ```js
@@ -65,7 +65,7 @@ client.on("channelDelete", function(channel){
 });
 ```
 
-### channelPinsUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelPinsUpdate
 ##### Emitted whenever the pins of a channel are updated. Due to the nature of the WebSocket event, not much information can be provided easily here.
 
 ```js
@@ -78,7 +78,7 @@ client.on("channelPinsUpdate", function(channel, time){
 });
 ```
     
-### channelUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelUpdate
 ##### Emitted whenever a channel is updated - e.g. name change, topic change.
 
 ```js
@@ -93,7 +93,7 @@ client.on("channelUpdate", function(oldChannel, newChannel){
 
 ## Client User Events:
 
-### clientUserGuildSettingsUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### clientUserGuildSettingsUpdate
 ##### Emitted whenever the client user's settings update.
 
 ```js
@@ -105,7 +105,7 @@ client.on("clientUserGuildSettingsUpdate", function(clientUserGuildSettings){
 });
 ```
 
-### clientUserSettingsUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### clientUserSettingsUpdate
 ##### Emitted when the client user's settings update.
 
 ```js
@@ -119,7 +119,7 @@ client.on("clientUserSettingsUpdate", function(clientUserSettings){
 
 ## Debug Events:
 
-### debug [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### debug
 ##### Emitted for general debugging information.
 
 ```js
@@ -133,7 +133,7 @@ client.on("debug", function(info){
 
 ## WebSocket Events:
 
-### disconnect [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### disconnect
 ##### Emitted when the client's WebSocket disconnects and will no longer attempt to reconnect.
 
 ```js
@@ -145,7 +145,7 @@ client.on("disconnect", function(event){
 });
 ```
 
-### reconnecting [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### reconnecting
 ##### Emitted whenever the client tries to reconnect to the WebSocket.
 
 ```js
@@ -154,7 +154,7 @@ client.on("reconnecting", function(){
 });
 ```
 
-### resume [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### resume
 ##### Emitted whenever a WebSocket resumes.
 
 ```js
@@ -168,7 +168,7 @@ client.on("resume", function(replayed){
 
 ## Emoji Events:
 
-### emojiCreate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### emojiCreate
 ##### Emitted whenever a custom emoji is created in a guild.
 
 ```js
@@ -180,7 +180,7 @@ client.on("emojiCreate", function(emoji){
 });
 ```
 
-### emojiDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### emojiDelete
 ##### Emitted whenever a custom guild emoji is deleted.
 
 ```js
@@ -192,7 +192,7 @@ client.on("emojiDelete", function(emoji){
 });
 ```
 
-### emojiUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### emojiUpdate
 ##### Emitted whenever a custom guild emoji is updated.
 
 ```js
@@ -207,7 +207,7 @@ client.on("emojiUpdate", function(oldEmoji, newEmoji){
 
 ## Error Events:
 
-### error [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### error
 ##### Emitted whenever the client's WebSocket encounters a connection error.
 
 ```js
@@ -221,7 +221,7 @@ client.on("error", function(error){
 
 ## Guild Events:
 
-### guildBanAdd [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildBanAdd
 ##### Emitted whenever a member is banned from a guild.
 
 ```js
@@ -234,7 +234,7 @@ client.on("guildBanAdd", function(guild, user){
 });
 ```
 
-### guildBanRemove [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildBanRemove
 ##### Emitted whenever a member is unbanned from a guild.
 
 ```js
@@ -247,7 +247,7 @@ client.on("guildBanRemove", function(guild, user){
 });
 ```
 
-### guildCreate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildCreate
 ##### Emitted whenever the client joins a guild.
 
 ```js
@@ -259,7 +259,7 @@ client.on("guildCreate", function(guild){
 });
 ```
 
-### guildDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildDelete
 #### Emitted whenever a guild is deleted/left.
 
 ```js
@@ -271,7 +271,7 @@ client.on("guildDelete", function(guild){
 });
 ```
 
-### guildMemberAdd [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildMemberAdd
 #### Emitted whenever a user joins a guild.
 
 ```js
@@ -283,7 +283,7 @@ client.on("guildMemberAdd", function(member){
 });
 ```
 
-### guildMemberAvailable [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildMemberAvailable
 ##### Emitted whenever a member becomes available in a large guild.
 
 ```js
@@ -295,7 +295,7 @@ client.on("guildMemberAvailable", function(member){
 });
 ```
 
-### guildMemberRemove [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildMemberRemove
 ##### Emitted whenever a member leaves a guild, or is kicked.
 
 ```js
@@ -307,7 +307,7 @@ client.on("guildMemberRemove", function(member){
 });
 ```
 
-### guildMembersChunk [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildMembersChunk
 ##### Emitted whenever a chunk of guild members is received (all members come from the same guild).
 
 ```js
@@ -320,7 +320,7 @@ client.on("guildMembersChunk", function(members, guild){
 });
 ```
 
-### guildMemberSpeaking [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildMemberSpeaking
 ##### Emitted once a guild member starts/stops speaking.
 
 ```js
@@ -333,7 +333,7 @@ client.on("guildMemberSpeaking", function(member, speaking){
 });
 ```
 
-### guildMemberUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildMemberUpdate
 ##### Emitted whenever a guild member changes - i.e. new role, removed role, nickname.
 
 ```js
@@ -346,7 +346,7 @@ client.on("guildMemberUpdate", function(oldMember, newMember){
 });
 ```
 
-### guildUnavailable [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildUnavailable
 ##### Emitted whenever a guild becomes unavailable, likely due to a server outage.
 
 ```js
@@ -358,7 +358,7 @@ client.on("guildUnavailable", function(guild){
 });
 ```
 
-### guildUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### guildUpdate
 ##### Emitted whenever a guild is updated - e.g. name change.
 
 ```js
@@ -371,7 +371,7 @@ client.on("guildUpdate", function(oldGuild, newGuild){
 });
 ```
 
-### message [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### message
 ##### Emitted whenever a message is created.
 
 ```js
@@ -383,7 +383,7 @@ client.on("message", function(message){
 });
 ```
 
-### messageDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### messageDelete
 ##### Emitted whenever a message is deleted.
 
 ```js
@@ -395,7 +395,7 @@ client.on("messageDelete", function(message){
 });
 ```
 
-### messageDeleteBulk [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### messageDeleteBulk
 ##### Emitted whenever messages are deleted in bulk.
 
 ```js
@@ -407,7 +407,7 @@ client.on("messageDeleteBulk", function(messages){
 });
 ```
 
-### messageReactionAdd [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### messageReactionAdd
 ##### Emitted whenever a reaction is added to a message.
 
 ```js
@@ -420,7 +420,7 @@ client.on("messageReactionAdd", function(messageReaction, user){
 });
 ```
 
-### messageReactionRemove [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### messageReactionRemove
 ##### Emitted whenever a reaction is removed from a message.
 
 ```js
@@ -433,7 +433,7 @@ client.on("messageReactionRemove", function(messageReaction, user){
 });
 ```
 
-### messageReactionRemoveAll [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### messageReactionRemoveAll
 ##### Emitted whenever all reactions are removed from a message.
 
 ```js
@@ -445,7 +445,7 @@ client.on("messageReactionRemoveAll", function(message){
 });
 ```
 
-### messageUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### messageUpdate
 ##### Emitted whenever a message is updated - e.g. embed or content change.
 
 ```js
@@ -458,7 +458,7 @@ client.on("messageUpdate", function(oldMessage, newMessage){
 });
 ```
 
-### presenceUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### presenceUpdate
 ##### Emitted whenever a guild member's presence changes, or they change one of their details.
 
 ```js
@@ -471,7 +471,7 @@ client.on("presenceUpdate", function(oldMember, newMember){
 });
 ```
 
-### ready [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### ready
 ##### Emitted when the client becomes ready to start working.
 
 ```js
@@ -480,7 +480,7 @@ client.on("ready", function(){
 });
 ```
 
-### roleCreate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### roleCreate
 ##### Emitted whenever a role is created.
 
 ```js
@@ -492,7 +492,7 @@ client.on("roleCreate", function(role){
 });
 ```
 
-### roleDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### roleDelete
 ##### Emitted whenever a guild role is deleted.
 
 ```js
@@ -504,7 +504,7 @@ client.on("roleDelete", function(role){
 });
 ```
 
-### roleUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### roleUpdate
 ##### Emitted whenever a guild role is updated.
 
 ```js
@@ -517,7 +517,7 @@ client.on("roleUpdate", function(oldRole, newRole){
 });
 ```
 
-### typingStart [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### typingStart
 ##### Emitted whenever a user starts typing in a channel.
 
 ```js
@@ -530,7 +530,7 @@ client.on("typingStart", function(channel, user){
 });
 ```
 
-### typingStop [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### typingStop
 ##### Emitted whenever a user stops typing in a channel.
 
 ```js
@@ -543,7 +543,7 @@ client.on("typingStop", function(channel, user){
 });
 ```
 
-### userNoteUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### userNoteUpdate
 ##### Emitted whenever a note is updated.
 
 ```js
@@ -557,7 +557,7 @@ client.on("userNoteUpdate", function(user, oldNote, newNote){
 });
 ```
 
-### userUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### userUpdate
 ##### Emitted whenever a user's details (e.g. username) are changed.
 
 ```js
@@ -570,7 +570,7 @@ client.on("userUpdate", function(oldUser, newUser){
 });
 ```
 
-### voiceStateUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### voiceStateUpdate
 ##### Emitted whenever a user changes voice state - e.g. `joins/leaves a channel, mutes/unmutes`.
 
 ```js
@@ -583,7 +583,7 @@ client.on("voiceStateUpdate", function(oldMember, newMember){
 });
 ```
 
-### warn [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### warn
 ##### Emitted for general warnings. 
 
 ```js
