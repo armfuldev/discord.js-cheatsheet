@@ -9,7 +9,7 @@
 This guide will go over all of the Discord.js events.  
 Make sure you learn from this, I don't suggest copy pasting.  
 
-## Content:
+### Content:
 - Channel events:
   -  channelCreate
   -  channelDelete
@@ -24,8 +24,6 @@ Make sure you learn from this, I don't suggest copy pasting.
   - disconnect
   - reconnecting
   - resume
-
----
 
 ## Channel events:
 
