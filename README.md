@@ -10,20 +10,20 @@ This guide will go over all of the Discord.js events.
 Make sure you learn from this, I don't suggest copy pasting.  
 
 ### Content:
-- **[Channel events](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)**
+- **[Channel Events](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)**
   -  [channelCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelCreate)
   -  [channelDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelDelete)
   -  [channelPinsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelPinsUpdate)
   -  [channelUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelUpdate)
-- **[Client User events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)**
-  - clientUserGuildSettingsUpdate
-  - clientUserSettingsUpdate
-- **[Debug events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug-events)**
-  - debug
-- **[WebSocket events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#websocket-events)**
-  - disconnect
-  - reconnecting
-  - resume
+- **[Client User Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)**
+  - [clientUserGuildSettingsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#clientUserGuildSettingsUpdate)
+  - [clientUserSettingsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#clientUserSettingsUpdate)
+- **[Debug Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug-events)**
+  - [debug](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug)
+- **[WebSocket Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#websocket-events)**
+  - [disconnect](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#disconnect)
+  - [reconnecting](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#reconnecting)
+  - [resume](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#resume)
 
 ## Channel Events:
 
@@ -117,14 +117,38 @@ client.on("debug", function(info){
 });
 ```
 
-// disconnect
-// Emitted when the client's WebSocket disconnects and will no longer attempt to reconnect.
+## WebSocket Events:
+
+### disconnect
+##### Emitted when the client's WebSocket disconnects and will no longer attempt to reconnect.
+
+```js
 // PARAMETER    TYPE              DESCRIPTION
 // Event        CloseEvent        The WebSocket close event
 
-```js
 client.on("disconnect", function(event){
     console.log(`The WebSocket has closed and will no longer attempt to reconnect`);
+});
+```
+
+### reconnecting
+##### Emitted whenever the client tries to reconnect to the WebSocket.
+
+```js
+client.on("reconnecting", function(){
+    console.log(`client tries to reconnect to the WebSocket`);
+});
+```
+
+### resume
+##### Emitted whenever a WebSocket resumes.
+
+```js
+// PARAMETER    TYPE          DESCRIPTION
+// replayed     number        The number of events that were replayed
+
+client.on("resume", function(replayed){
+    console.log(`whenever a WebSocket resumes, ${replayed} replays`);
 });
 ```
 
@@ -418,26 +442,6 @@ client.on("ready", function(){
 		console.log(`Generated bot invite link: ${link}`);
 		inviteLink = link;
 	});
-});
-```
-
-// reconnecting
-// Emitted whenever the client tries to reconnect to the WebSocket.
-
-```js
-client.on("reconnecting", function(){
-    console.log(`client tries to reconnect to the WebSocket`);
-});
-```
-
-// resume
-// Emitted whenever a WebSocket resumes.
-// PARAMETER    TYPE          DESCRIPTION
-// replayed     number        The number of events that were replayed
-
-```js
-client.on("resume", function(replayed){
-    console.log(`whenever a WebSocket resumes, ${replayed} replays`);
 });
 ```
 
