@@ -27,47 +27,51 @@ Make sure you learn from this, I don't suggest copy pasting.
 
 ## Channel Events:
 
-// channelCreate
-// Emitted whenever a channel is created.
+### channelCreate
+##### Emitted whenever a channel is created.
+
+```js
 // PARAMETER    TYPE        DESCRIPTION
 // channel      Channel     The channel that was created
 
-```js
 client.on("channelCreate", function(channel){
     console.log(`channelCreate: ${channel}`);
 });
 ```
 
-// channelDelete
-// Emitted whenever a channel is deleted.
+### channelDelete
+#### Emitted whenever a channel is deleted.
+
+```js
 // PARAMETER   TYPE      DESCRIPTION
 // channel     Channel   The channel that was deleted
 
-```js
 client.on("channelDelete", function(channel){
     console.log(`channelDelete: ${channel}`);
 });
 ```
 
-// channelPinsUpdate
-// Emitted whenever the pins of a channel are updated. Due to the nature of the WebSocket event, not much information can be provided easily here - you need to manually check the pins yourself.
+### channelPinsUpdate
+##### Emitted whenever the pins of a channel are updated. Due to the nature of the WebSocket event, not much information can be provided easily here - you need to manually check the pins yourself.
+
+```js
 // PARAMETER    TYPE         DESCRIPTION
 // channel      Channel      The channel that the pins update occurred in
 // time         Date         The time of the pins update
 
-```js
 client.on("channelPinsUpdate", function(channel, time){
     console.log(`channelPinsUpdate: ${channel}:${time}`);
 });
 ```
     
-// channelUpdate
-// Emitted whenever a channel is updated - e.g. name change, topic change.
+### channelUpdate
+##### Emitted whenever a channel is updated - e.g. name change, topic change.
+
+```js
 // PARAMETER        TYPE        DESCRIPTION
 // oldChannel       Channel     The channel before the update
 // newChannel       Channel     The channel after the update
 
-```js
 client.on("channelUpdate", function(oldChannel, newChannel){
     console.log(`channelUpdate -> a channel is updated - e.g. name change, topic change`);
 });
@@ -75,34 +79,39 @@ client.on("channelUpdate", function(oldChannel, newChannel){
 
 ## Client User Events:
 
-// clientUserGuildSettingsUpdate
-// Emitted whenever the client user's settings update.
+### clientUserGuildSettingsUpdate
+##### Emitted whenever the client user's settings update.
+
+```js
 // PARAMETER                  TYPE                       DESCRIPTION
 // clientUserGuildSettings    ClientUserGuildSettings    The new client user guild settings
 
-```js
 client.on("clientUserGuildSettingsUpdate", function(clientUserGuildSettings){
     console.log(`clientUserGuildSettingsUpdate -> client user's settings update`);
 });
 ```
 
-// clientUserSettingsUpdate
-// Emitted when the client user's settings update.
+### clientUserSettingsUpdate
+##### Emitted when the client user's settings update.
+
+```js
 // PARAMETER             TYPE                  DESCRIPTION
 // clientUserSettings    ClientUserSettings    The new client user settings
 
-```js
 client.on("clientUserSettingsUpdate", function(clientUserSettings){
     console.log(`clientUserSettingsUpdate -> client user's settings update`);
 });
 ```
 
-// debug
-// Emitted for general debugging information.
+## Debug Events:
+
+### debug
+##### Emitted for general debugging information.
+
+```js
 // PARAMETER    TYPE         DESCRIPTION
 // info         string       The debug information
 
-```js
 client.on("debug", function(info){
     console.log(`debug -> ${info}`);
 });
