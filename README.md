@@ -29,7 +29,15 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [emojiDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiDelete)
   - [emojiUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiUpdate)
 - **[Error Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error-events)**
+  - [error](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error)
+  - [warn](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#warn)
 - **[Guild Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
+- **[Message Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#message-events)**
+- **[Role Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#role-events)**
+- **[Guild Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
+- **[User Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#user-events)**
+- **[Voice Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
+  - [voiceStateUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#voiceStateUpdate)
 
 ## Channel Events:
 
