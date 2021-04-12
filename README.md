@@ -32,6 +32,18 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [error](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error)
   - [warn](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#warn)
 - **[Guild Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
+  - [guildBanAdd](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildBanAdd)
+  - [guildBanRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildBanRemove)
+  - [guildCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildCreate)
+  - [guildDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildDelete)
+  - [guildMemberAdd](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberAdd)
+  - [guildMemberAvailable](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberAvailable)
+  - [guildMemberRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberRemove)
+  - [guildMembersChunk](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMembersChunk)
+  - [guildMemberSpeaking](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberSpeaking)
+  - [guildMemberUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberUpdate)
+  - [guildUnavailable](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberSpeaking)
+  - [guildUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildUpdate)
 - **[Message Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#message-events)**
 - **[Role Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#role-events)**
 - **[Guild Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
