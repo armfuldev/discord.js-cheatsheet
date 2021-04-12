@@ -45,8 +45,17 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [guildUnavailable](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberSpeaking)
   - [guildUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildUpdate)
 - **[Message Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#message-events)**
+  - [message](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#message)
+  - [messageDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageDelete)
+  - [messageDeleteBulk](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageDeleteBulk)
+  - [messageReactionAdd](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageReactionAdd)
+  - [messageReactionRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageReactionRemove)
+  - [messageReactionRemoveAll](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageReactionRemoveAll)
+  - [messageUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageUpdate)
 - **[Role Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#role-events)**
-- **[Guild Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
+  - [roleCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleCreate)
+  - [roleDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleDelete)
+  - [roleUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleUpdate)
 - **[User Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#user-events)**
 - **[Voice Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
   - [voiceStateUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#voiceStateUpdate)
@@ -395,6 +404,8 @@ client.on("guildUpdate", function(oldGuild, newGuild){
 });
 ```
 
+## Message Events:
+
 ### message
 ##### Emitted whenever a message is created.
 
@@ -482,6 +493,32 @@ client.on("messageUpdate", function(oldMessage, newMessage){
 });
 ```
 
+### typingStart
+##### Emitted whenever a user starts typing in a channel.
+
+```js
+// PARAMETER      TYPE            DESCRIPTION
+// channel        Channel         The channel the user started typing in
+// user           User            The user that started typing
+
+client.on("typingStart", function(channel, user){
+    console.log(`${user.tag} has started typing`);
+});
+```
+
+### typingStop
+##### Emitted whenever a user stops typing in a channel.
+
+```js
+// PARAMETER       TYPE           DESCRIPTION
+// channel         Channel        The channel the user stopped typing in
+// user            User           The user that stopped typing
+
+client.on("typingStop", function(channel, user){
+    console.log(`${user.tag} has stopped typing`);
+});
+```
+
 ### presenceUpdate
 ##### Emitted whenever a guild member's presence changes, or they change one of their details.
 
@@ -538,32 +575,6 @@ client.on("roleDelete", function(role){
 
 client.on("roleUpdate", function(oldRole, newRole){
     console.error(`a guild role is updated`);
-});
-```
-
-### typingStart
-##### Emitted whenever a user starts typing in a channel.
-
-```js
-// PARAMETER      TYPE            DESCRIPTION
-// channel        Channel         The channel the user started typing in
-// user           User            The user that started typing
-
-client.on("typingStart", function(channel, user){
-    console.log(`${user.tag} has started typing`);
-});
-```
-
-### typingStop
-##### Emitted whenever a user stops typing in a channel.
-
-```js
-// PARAMETER       TYPE           DESCRIPTION
-// channel         Channel        The channel the user stopped typing in
-// user            User           The user that stopped typing
-
-client.on("typingStop", function(channel, user){
-    console.log(`${user.tag} has stopped typing`);
 });
 ```
 
