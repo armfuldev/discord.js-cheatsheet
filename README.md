@@ -10,17 +10,17 @@ This guide will go over all of the Discord.js events.
 Make sure you learn from this, I don't suggest copy pasting.  
 
 ### Content:
-- [Channel events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)
+- **[Channel events](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)**
   -  [channelCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelCreate)
   -  [channelDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelDelete)
   -  [channelPinsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelPinsUpdate)
   -  [channelUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelUpdate)
-- [Client User events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)
+- **[Client User events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)**
   - clientUserGuildSettingsUpdate
   - clientUserSettingsUpdate
-- [Debug events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug-events)
+- **[Debug events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug-events)**
   - debug
-- [WebSocket events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#websocket-events)
+- **[WebSocket events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#websocket-events)**
   - disconnect
   - reconnecting
   - resume
