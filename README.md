@@ -36,14 +36,16 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [guildBanRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildBanRemove)
   - [guildCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildCreate)
   - [guildDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildDelete)
+  - [guildUnavailable](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberSpeaking)
+  - [guildUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildUpdate)
+- **[Guild Member Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
   - [guildMemberAdd](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberAdd)
   - [guildMemberAvailable](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberAvailable)
   - [guildMemberRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberRemove)
   - [guildMembersChunk](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMembersChunk)
   - [guildMemberSpeaking](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberSpeaking)
-  - [guildMemberUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberUpdate)
-  - [guildUnavailable](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberSpeaking)
-  - [guildUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildUpdate)
+  - [guildMemberUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#presenceUpdate)
+  - [presenceUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberUpdate)
 - **[Message Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#message-events)**
   - [message](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#message)
   - [messageDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageDelete)
@@ -52,11 +54,15 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [messageReactionRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageReactionRemove)
   - [messageReactionRemoveAll](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageReactionRemoveAll)
   - [messageUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageUpdate)
+  - [typingStart](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#typingStart)
+  - [typingStop](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#typingStop)
 - **[Role Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#role-events)**
   - [roleCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleCreate)
   - [roleDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleDelete)
   - [roleUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleUpdate)
 - **[User Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#user-events)**
+  - [userNoteUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#userNoteUpdate)
+  - [userUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#userUpdate)
 - **[Voice Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
   - [voiceStateUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#voiceStateUpdate)
 
