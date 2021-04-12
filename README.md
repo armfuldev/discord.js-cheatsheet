@@ -24,6 +24,12 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [disconnect](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#disconnect)
   - [reconnecting](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#reconnecting)
   - [resume](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#resume)
+- **[Emoji Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emoji-events)**
+  - [emojiCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiCreate)
+  - [emojiDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiDelete)
+  - [emojiUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiUpdate)
+- **[Error Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error-events)**
+- **[Guild Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
 
 ## Channel Events:
 
