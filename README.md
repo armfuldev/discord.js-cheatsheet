@@ -365,150 +365,152 @@ client.on("guildUpdate", function(oldGuild, newGuild){
 
 ### message [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
 ##### Emitted whenever a message is created.
+
+```js
 // PARAMETER      TYPE           DESCRIPTION
 // message        Message        The created message
 
-```js
 client.on("message", function(message){
     console.log(`message is created -> ${message}`);
 });
 ```
 
-// messageDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a message is deleted.
+### messageDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a message is deleted.
+
+```js
 // PARAMETER      TYPE           DESCRIPTION
 // message        Message        The deleted message
 
-```js
 client.on("messageDelete", function(message){
     console.log(`message is deleted -> ${message}`);
 });
 ```
 
-// messageDeleteBulk [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever messages are deleted in bulk.
+### messageDeleteBulk [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever messages are deleted in bulk.
+
+```js
 // PARAMETER    TYPE                              DESCRIPTION
 // messages     Collection<Snowflake, Message>    The deleted messages, mapped by their ID
 
-```js
 client.on("messageDeleteBulk", function(messages){
     console.log(`messages are deleted -> ${messages}`);
 });
 ```
 
-// messageReactionAdd [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a reaction is added to a message.
+### messageReactionAdd [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a reaction is added to a message.
+
+```js
 // PARAMETER              TYPE                   DESCRIPTION
 // messageReaction        MessageReaction        The reaction object
 // user                   User                   The user that applied the emoji or reaction emoji
 
-```js
 client.on("messageReactionAdd", function(messageReaction, user){
     console.log(`a reaction is added to a message`);
 });
 ```
 
-// messageReactionRemove [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a reaction is removed from a message.
+### messageReactionRemove [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a reaction is removed from a message.
+
+```js
 // PARAMETER              TYPE                   DESCRIPTION
 // messageReaction        MessageReaction        The reaction object
 // user                   User                   The user that removed the emoji or reaction emoji
 
-```js
 client.on("messageReactionRemove", function(messageReaction, user){
     console.log(`a reaction is removed from a message`);
 });
 ```
 
-// messageReactionRemoveAll [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever all reactions are removed from a message.
+### messageReactionRemoveAll [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever all reactions are removed from a message.
+
+```js
 // PARAMETER          TYPE           DESCRIPTION
 // message            Message        The message the reactions were removed from
 
-```js
 client.on("messageReactionRemoveAll", function(message){
     console.error(`all reactions are removed from a message`);
 });
 ```
 
-// messageUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a message is updated - e.g. embed or content change.
+### messageUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a message is updated - e.g. embed or content change.
+
+```js
 // PARAMETER     TYPE           DESCRIPTION
 // oldMessage    Message        The message before the update
 // newMessage    Message        The message after the update
 
-```js
 client.on("messageUpdate", function(oldMessage, newMessage){
     console.log(`a message is updated`);
 });
 ```
 
-// presenceUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a guild member's presence changes, or they change one of their details.
+### presenceUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a guild member's presence changes, or they change one of their details.
+
+```js
 // PARAMETER    TYPE               DESCRIPTION
 // oldMember    GuildMember        The member before the presence update
 // newMember    GuildMember        The member after the presence update
 
-```js
 client.on("presenceUpdate", function(oldMember, newMember){
     console.log(`a guild member's presence changes`);
 });
 ```
 
-// ready [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted when the client becomes ready to start working.
+### ready [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted when the client becomes ready to start working.
 
 ```js
 client.on("ready", function(){
-    console.log(`the client becomes ready to start`);
-	console.log(`I am ready! Logged in as ${client.user.tag}!`);
-	console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-
-  	client.user.setActivity("the upright organ");
-	client.generateInvite(['SEND_MESSAGES', 'MANAGE_GUILD', 'MENTION_EVERYONE'])
-	.then(link => {
-		console.log(`Generated bot invite link: ${link}`);
-		inviteLink = link;
-	});
+	console.log(`Logged in as ${client.user.tag}!`);
 });
 ```
 
-// roleCreate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a role is created.
+### roleCreate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a role is created.
+
+```js
 // PARAMETER    TYPE        DESCRIPTION
 // role         Role        The role that was created
 
-```js
 client.on("roleCreate", function(role){
     console.error(`a role is created`);
 });
 ```
 
-// roleDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a guild role is deleted.
+### roleDelete [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a guild role is deleted.
+
+```js
 // PARAMETER    TYPE        DESCRIPTION
 // role         Role        The role that was deleted
 
-```js
 client.on("roleDelete", function(role){
     console.error(`a guild role is deleted`);
 });
 ```
 
-// roleUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a guild role is updated.
+### roleUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a guild role is updated.
+
+```js
 // PARAMETER      TYPE        DESCRIPTION
 // oldRole        Role        The role before the update
 // newRole        Role        The role after the update
 
-```js
 client.on("roleUpdate", function(oldRole, newRole){
     console.error(`a guild role is updated`);
 });
 ```
 
-// typingStart [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a user starts typing in a channel.
+### typingStart [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a user starts typing in a channel.
 
 ```js
 // PARAMETER      TYPE            DESCRIPTION
@@ -520,8 +522,8 @@ client.on("typingStart", function(channel, user){
 });
 ```
 
-// typingStop [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a user stops typing in a channel.
+### typingStop [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a user stops typing in a channel.
 
 ```js
 // PARAMETER       TYPE           DESCRIPTION
@@ -533,8 +535,8 @@ client.on("typingStop", function(channel, user){
 });
 ```
 
-// userNoteUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
-// Emitted whenever a note is updated.
+### userNoteUpdate [^](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+##### Emitted whenever a note is updated.
 
 ```js
 // PARAMETER      TYPE          DESCRIPTION
