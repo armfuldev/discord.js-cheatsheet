@@ -18,9 +18,9 @@ Make sure you learn from this, I don't suggest copy pasting.
 - [Client User events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)
   - clientUserGuildSettingsUpdate
   - clientUserSettingsUpdate
-- [Debug events:]()
+- [Debug events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug-events)
   - debug
-- [WebSocket events:]()
+- [WebSocket events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#websocket-events)
   - disconnect
   - reconnecting
   - resume
@@ -52,7 +52,7 @@ client.on("channelDelete", function(channel){
 ```
 
 ### channelPinsUpdate
-##### Emitted whenever the pins of a channel are updated. Due to the nature of the WebSocket event, not much information can be provided easily here - you need to manually check the pins yourself.
+##### Emitted whenever the pins of a channel are updated. Due to the nature of the WebSocket event, not much information can be provided easily here.
 
 ```js
 // PARAMETER    TYPE         DESCRIPTION
