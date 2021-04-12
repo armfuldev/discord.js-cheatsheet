@@ -11,10 +11,10 @@ Make sure you learn from this, I don't suggest copy pasting.
 
 ### Content:
 - [Channel events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)
-  -  channelCreate
-  -  channelDelete
-  -  channelPinsUpdate
-  -  channelUpdate
+  -  [channelCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelCreate)
+  -  [channelDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelDelete)
+  -  [channelPinsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelPinsUpdate)
+  -  [channelUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelUpdate)
 - [Client User events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)
   - clientUserGuildSettingsUpdate
   - clientUserSettingsUpdate
