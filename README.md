@@ -33,7 +33,7 @@ Make sure you learn from this, I don't suggest copy pasting.
 
 ## Channel Events:
 
-### channelCreate [⤴](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelCreate [⮥](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
 ##### Emitted whenever a channel is created.
 
 ```js
@@ -45,7 +45,7 @@ client.on("channelCreate", function(channel){
 });
 ```
 
-### channelDelete [⤴](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelDelete [⮥](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
 #### Emitted whenever a channel is deleted.
 
 ```js
@@ -57,7 +57,7 @@ client.on("channelDelete", function(channel){
 });
 ```
 
-### channelPinsUpdate [⤴](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
+### channelPinsUpdate [⮥](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#content)
 ##### Emitted whenever the pins of a channel are updated. Due to the nature of the WebSocket event, not much information can be provided easily here.
 
 ```js
