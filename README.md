@@ -470,11 +470,12 @@ client.on("roleUpdate", function(oldRole, newRole){
 
 // typingStart
 // Emitted whenever a user starts typing in a channel.
+
+```js
 // PARAMETER      TYPE            DESCRIPTION
 // channel        Channel         The channel the user started typing in
 // user           User            The user that started typing
 
-```js
 client.on("typingStart", function(channel, user){
     console.log(`${user.tag} has started typing`);
 });
@@ -482,11 +483,12 @@ client.on("typingStart", function(channel, user){
 
 // typingStop
 // Emitted whenever a user stops typing in a channel.
+
+```js
 // PARAMETER       TYPE           DESCRIPTION
 // channel         Channel        The channel the user stopped typing in
 // user            User           The user that stopped typing
 
-```js
 client.on("typingStop", function(channel, user){
     console.log(`${user.tag} has stopped typing`);
 });
@@ -494,12 +496,13 @@ client.on("typingStop", function(channel, user){
 
 // userNoteUpdate
 // Emitted whenever a note is updated.
+
+```js
 // PARAMETER      TYPE          DESCRIPTION
 // user           User          The user the note belongs to
 // oldNote        String        The note content before the update
 // newNote        String        The note content after the update
 
-```js
 client.on("userNoteUpdate", function(user, oldNote, newNote){
     console.log(`a member's note is updated`);
 });
@@ -508,12 +511,11 @@ client.on("userNoteUpdate", function(user, oldNote, newNote){
 ### userUpdate
 ##### Emitted whenever a user's details (e.g. username) are changed.
 
-|  PARAMETER  |    TYPE  |             DESCRIPTION         |
-|    :---:    |   :---:  |                :---:            |
-|   oldUser   |   User   |     The user before the update  |
-|   newUser   |   User   |     The user after the update   |
-
 ```js
+// PARAMETER      TYPE        DESCRIPTION
+// oldUser        User        The user before the update
+// newUser        User        The user after the update
+
 client.on("userUpdate", function(oldUser, newUser){
     console.log(`user's details (e.g. username) are changed`);
 });
@@ -522,12 +524,11 @@ client.on("userUpdate", function(oldUser, newUser){
 ### voiceStateUpdate
 ##### Emitted whenever a user changes voice state - e.g. `joins/leaves a channel, mutes/unmutes`.
 
-|  PARAMETER  |    TYPE     |                 DESCRIPTION                  |
-|    :---:    |    :---:    |                   :---:                      |
-| oldMember   | GuildMember |   The member before the voice state update   |
-| newMember   | GuildMember |   The member after the voice state update    |
-
 ```js
+// PARAMETER    TYPE             DESCRIPTION
+// oldMember    GuildMember      The member before the voice state update
+// newMember    GuildMember      The member after the voice state update
+
 client.on("voiceStateUpdate", function(oldMember, newMember){
     console.log(`a user changes voice state`);
 });
@@ -536,18 +537,13 @@ client.on("voiceStateUpdate", function(oldMember, newMember){
 ### warn
 ##### Emitted for general warnings. 
 
-| PARAMETER   | TYPE     | DESCRIPTION    |
-|    :---:    |   :---:  |      :---:     |
-| info        | string   | The warning    |
-
 ```js
+// PARAMETER    TYPE       DESCRIPTION
+// info         string     The warning
+
 client.on("warn", function(info){
     console.log(`warn: ${info}`);
 });
-```
-
-```js
-client.login(token);
 ```
 
 <p align="center">
