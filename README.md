@@ -152,191 +152,213 @@ client.on("resume", function(replayed){
 });
 ```
 
-// emojiCreate
-// Emitted whenever a custom emoji is created in a guild.
+## Emoji Events:
+
+### emojiCreate
+##### Emitted whenever a custom emoji is created in a guild.
+
+```js
 // PARAMETER    TYPE          DESCRIPTION
 // emoji        Emoji         The emoji that was created
 
-```js
 client.on("emojiCreate", function(emoji){
     console.log(`a custom emoji is created in a guild`);
 });
 ```
 
-// emojiDelete
-// Emitted whenever a custom guild emoji is deleted.
+### emojiDelete
+##### Emitted whenever a custom guild emoji is deleted.
+
+```js
 // PARAMETER    TYPE         DESCRIPTION
 // emoji        Emoji        The emoji that was deleted
 
-```js
 client.on("emojiDelete", function(emoji){
     console.log(`a custom guild emoji is deleted`);
 });
 ```
 
-// emojiUpdate
-// Emitted whenever a custom guild emoji is updated.
+### emojiUpdate
+##### Emitted whenever a custom guild emoji is updated.
+
+```js
 // PARAMETER    TYPE       DESCRIPTION
 // oldEmoji     Emoji      The old emoji
 // newEmoji     Emoji      The new emoji
 
-```js
 client.on("emojiUpdate", function(oldEmoji, newEmoji){
     console.log(`a custom guild emoji is updated`);
 });
 ```
 
-// error
-// Emitted whenever the client's WebSocket encounters a connection error.
+## Error Events:
+
+### error
+##### Emitted whenever the client's WebSocket encounters a connection error.
+
+```js
 PARAMETER    TYPE     DESCRIPTION
 error        Error    The encountered error
 
-```js
 client.on("error", function(error){
     console.error(`client's WebSocket encountered a connection error: ${error}`);
 });
 ```
 
-// guildBanAdd
-// Emitted whenever a member is banned from a guild.
+## Guild Events:
+
+### guildBanAdd
+##### Emitted whenever a member is banned from a guild.
+
+```js
 // PARAMETER    TYPE          DESCRIPTION
 // guild        Guild         The guild that the ban occurred in
 // user         User          The user that was banned
 
-```js
 client.on("guildBanAdd", function(guild, user){
     console.log(`a member is banned from a guild`);
 });
 ```
 
-// guildBanRemove
-// Emitted whenever a member is unbanned from a guild.
+### guildBanRemove
+##### Emitted whenever a member is unbanned from a guild.
+
+```js
 // PARAMETER    TYPE         DESCRIPTION
 // guild        Guild        The guild that the unban occurred in
 // user         User         The user that was unbanned
 
-```js
 client.on("guildBanRemove", function(guild, user){
     console.log(`a member is unbanned from a guild`);
 });
 ```
 
-// guildCreate
-// Emitted whenever the client joins a guild.
+### guildCreate
+##### Emitted whenever the client joins a guild.
+
+```js
 // PARAMETER    TYPE         DESCRIPTION
 // guild        Guild        The created guild
 
-```js
 client.on("guildCreate", function(guild){
     console.log(`the client joins a guild`);
 });
 ```
 
-// guildDelete
-// Emitted whenever a guild is deleted/left.
+### guildDelete
+#### Emitted whenever a guild is deleted/left.
+
+```js
 // PARAMETER    TYPE         DESCRIPTION
 // guild        Guild        The guild that was deleted
 
-```js
 client.on("guildDelete", function(guild){
     console.log(`the client deleted/left a guild`);
 });
 ```
 
-// guildMemberAdd
-// Emitted whenever a user joins a guild.
+### guildMemberAdd
+#### Emitted whenever a user joins a guild.
+
+```js
 // PARAMETER     TYPE               DESCRIPTION
 // member        GuildMember        The member that has joined a guild
 
-```js
 client.on("guildMemberAdd", function(member){
     console.log(`a user joins a guild: ${member.tag}`);
 });
 ```
 
-// guildMemberAvailable
-// Emitted whenever a member becomes available in a large guild.
-// PARAMETER     TYPE               DESCRIPTION
-// member        GuildMember        The member that became available
+### guildMemberAvailable
+##### Emitted whenever a member becomes available in a large guild.
 
 ```js
+ PARAMETER     TYPE               DESCRIPTION
+ member        GuildMember        The member that became available
+
 client.on("guildMemberAvailable", function(member){
     console.log(`member becomes available in a large guild: ${member.tag}`);
 });
 ```
 
-// guildMemberRemove
-// Emitted whenever a member leaves a guild, or is kicked.
+### guildMemberRemove
+##### Emitted whenever a member leaves a guild, or is kicked.
+
+```js
 // PARAMETER     TYPE               DESCRIPTION
 // member        GuildMember        The member that has left/been kicked from the guild
 
-```js
 client.on("guildMemberRemove", function(member){
     console.log(`a member leaves a guild, or is kicked: ${member.tag}`);
 });
 ```
 
-// guildMembersChunk
-// Emitted whenever a chunk of guild members is received (all members come from the same guild).
+### guildMembersChunk
+##### Emitted whenever a chunk of guild members is received (all members come from the same guild).
+
+```js
 // PARAMETER      TYPE                      DESCRIPTION
 // members        Array<GuildMember>        The members in the chunk
 // guild          Guild                     The guild related to the member chunk
 
-```js
 client.on("guildMembersChunk", function(members, guild){
     console.error(`a chunk of guild members is received`);
 });
 ```
 
-// guildMemberSpeaking
-// Emitted once a guild member starts/stops speaking.
+### guildMemberSpeaking
+##### Emitted once a guild member starts/stops speaking.
+
+```js
 // PARAMETER     TYPE                DESCRIPTION
 // member        GuildMember         The member that started/stopped speaking
 // speaking      boolean             Whether or not the member is speaking
 
-```js
 client.on("guildMemberSpeaking", function(member, speaking){
     console.log(`a guild member starts/stops speaking: ${member.tag}`);
 });
 ```
 
-// guildMemberUpdate
-// Emitted whenever a guild member changes - i.e. new role, removed role, nickname.
+### guildMemberUpdate
+##### Emitted whenever a guild member changes - i.e. new role, removed role, nickname.
+
+```js
 // PARAMETER    TYPE               DESCRIPTION
 // oldMember    GuildMember        The member before the update
 // newMember    GuildMember        The member after the update
 
-```js
 client.on("guildMemberUpdate", function(oldMember, newMember){
     console.error(`a guild member changes - i.e. new role, removed role, nickname.`);
 });
 ```
 
-// guildUnavailable
-// Emitted whenever a guild becomes unavailable, likely due to a server outage.
+### guildUnavailable
+##### Emitted whenever a guild becomes unavailable, likely due to a server outage.
+
+```js
 // PARAMETER    TYPE          DESCRIPTION
 // guild        Guild         The guild that has become unavailable
 
-```js
 client.on("guildUnavailable", function(guild){
     console.error(`a guild becomes unavailable, likely due to a server outage: ${guild}`);
 });
 ```
 
-// guildUpdate
-// Emitted whenever a guild is updated - e.g. name change.
+### guildUpdate
+##### Emitted whenever a guild is updated - e.g. name change.
+
+```js
 // PARAMETER     TYPE      DESCRIPTION
 // oldGuild      Guild     The guild before the update
 // newGuild      Guild     The guild after the update
 
-```js
 client.on("guildUpdate", function(oldGuild, newGuild){
     console.error(`a guild is updated`);
 });
 ```
 
-// message
-// Emitted whenever a message is created.
+### message
+##### Emitted whenever a message is created.
 // PARAMETER      TYPE           DESCRIPTION
 // message        Message        The created message
 
