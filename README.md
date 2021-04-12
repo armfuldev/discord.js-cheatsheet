@@ -219,6 +219,18 @@ client.on("error", function(error){
 });
 ```
 
+### warn
+##### Emitted for general warnings. 
+
+```js
+// PARAMETER    TYPE       DESCRIPTION
+// info         string     The warning
+
+client.on("warn", function(info){
+    console.log(`warn: ${info}`);
+});
+```
+
 ## Guild Events:
 
 ### guildBanAdd
@@ -580,18 +592,6 @@ client.on("userUpdate", function(oldUser, newUser){
 
 client.on("voiceStateUpdate", function(oldMember, newMember){
     console.log(`a user changes voice state`);
-});
-```
-
-### warn
-##### Emitted for general warnings. 
-
-```js
-// PARAMETER    TYPE       DESCRIPTION
-// info         string     The warning
-
-client.on("warn", function(info){
-    console.log(`warn: ${info}`);
 });
 ```
 
