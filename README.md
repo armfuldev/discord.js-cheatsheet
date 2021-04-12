@@ -4,12 +4,12 @@
     </a>
 </p>
 
-## Discord.js Cheatsheet
+### Discord.js Cheatsheet
 
 This guide will go over all of the Discord.js events.  
 Make sure you learn from this, I don't suggest copy pasting.  
 
-###### Content:
+### Content:
 - Channel events:
   -  channelCreate
   -  channelDelete
@@ -25,6 +25,8 @@ Make sure you learn from this, I don't suggest copy pasting.
   - reconnecting
   - resume
 
+---
+
 ```js
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -32,6 +34,10 @@ const client = new Discord.Client();
 const token = 'your-token-here';
 var inviteLink = 'bot-invite-link';
 ```
+
+---
+
+## Channel events:
 
 // channelCreate
 // Emitted whenever a channel is created.
@@ -78,6 +84,8 @@ client.on("channelUpdate", function(oldChannel, newChannel){
     console.log(`channelUpdate -> a channel is updated - e.g. name change, topic change`);
 });
 ```
+
+---
 
 // clientUserGuildSettingsUpdate
 // Emitted whenever the client user's settings update.
