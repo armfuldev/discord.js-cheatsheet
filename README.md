@@ -10,7 +10,7 @@ This guide will go over all of the Discord.js events.
 Make sure you learn from this, I don't suggest copy pasting.  
 
 ### Content:
-- Channel events:
+- [Channel events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)
   -  channelCreate
   -  channelDelete
   -  channelPinsUpdate
