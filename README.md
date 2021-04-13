@@ -635,6 +635,11 @@ client.on("voiceStateUpdate", function(oldMember, newMember){
 });
 ```
 
+##### Thanks for reading!
+
+### By: [armful#0001](https://github.com/armfxl)
+###### Feel free to reach out to me for support.
+
 <p align="center">
   <a href="https://discord.gg/VKJeg6nvSH">
   <img src="https://i.imgur.com/HWF3UoH.png"/>
