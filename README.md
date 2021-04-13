@@ -635,10 +635,10 @@ client.on("voiceStateUpdate", function(oldMember, newMember){
 });
 ```
 
-##### Thanks for reading!
+### Thanks for reading!
+Feel free to reach out to me for support.
 
-### By: [armful#0001](https://github.com/armfxl)
-###### Feel free to reach out to me for support.
+## By: [armful#0001](https://github.com/armfxl)
 
 <p align="center">
   <a href="https://discord.gg/VKJeg6nvSH">
