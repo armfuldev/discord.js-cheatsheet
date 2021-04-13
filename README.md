@@ -6,7 +6,7 @@
 
 ## Discord.js Cheatsheet
 
-This guide will go over all of the Discord.js events and how to use them, along with examples. You can use this information in many ways, but the most common would be creating a log system for your Discord bot. I don't suggest just copy pasting, try implementing this with your own code.  
+This guide will go over all of the Discord.js events and how to use them, along with examples. You can use this information in many ways, but the most common would be creating a log system for your Discord bot. I don't suggest just copy pasting, try implementing this with your own code. Happy reading!  
   
 If you want to just copy the code you can do so **[here](https://github.com/armfxl/discord.js-cheatsheet/blob/main/cheatsheet.js)**.
 
