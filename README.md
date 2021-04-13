@@ -158,6 +158,32 @@ client.on("debug", function(info){
 });
 ```
 
+## Error Events:
+
+### error
+##### Emitted whenever the client's WebSocket encounters a connection error.
+
+```js
+PARAMETER    TYPE     DESCRIPTION
+error        Error    The encountered error
+
+client.on("error", function(error){
+    console.error(`client's WebSocket encountered a connection error: ${error}`);
+});
+```
+
+### warn
+##### Emitted for general warnings. 
+
+```js
+// PARAMETER    TYPE       DESCRIPTION
+// info         string     The warning
+
+client.on("warn", function(info){
+    console.log(`warn: ${info}`);
+});
+```
+
 ## WebSocket Events:
 
 ### disconnect
@@ -232,32 +258,6 @@ client.on("emojiUpdate", function(oldEmoji, newEmoji){
 });
 ```
 
-## Error Events:
-
-### error
-##### Emitted whenever the client's WebSocket encounters a connection error.
-
-```js
-PARAMETER    TYPE     DESCRIPTION
-error        Error    The encountered error
-
-client.on("error", function(error){
-    console.error(`client's WebSocket encountered a connection error: ${error}`);
-});
-```
-
-### warn
-##### Emitted for general warnings. 
-
-```js
-// PARAMETER    TYPE       DESCRIPTION
-// info         string     The warning
-
-client.on("warn", function(info){
-    console.log(`warn: ${info}`);
-});
-```
-
 ## Guild Events:
 
 ### guildBanAdd
@@ -309,6 +309,33 @@ client.on("guildDelete", function(guild){
     console.log(`the client deleted/left a guild`);
 });
 ```
+
+### guildUnavailable
+##### Emitted whenever a guild becomes unavailable, likely due to a server outage.
+
+```js
+// PARAMETER    TYPE          DESCRIPTION
+// guild        Guild         The guild that has become unavailable
+
+client.on("guildUnavailable", function(guild){
+    console.error(`a guild becomes unavailable, likely due to a server outage: ${guild}`);
+});
+```
+
+### guildUpdate
+##### Emitted whenever a guild is updated - e.g. name change.
+
+```js
+// PARAMETER     TYPE      DESCRIPTION
+// oldGuild      Guild     The guild before the update
+// newGuild      Guild     The guild after the update
+
+client.on("guildUpdate", function(oldGuild, newGuild){
+    console.error(`a guild is updated`);
+});
+```
+
+## Guild Member Events:
 
 ### guildMemberAdd
 #### Emitted whenever a user joins a guild.
@@ -385,28 +412,16 @@ client.on("guildMemberUpdate", function(oldMember, newMember){
 });
 ```
 
-### guildUnavailable
-##### Emitted whenever a guild becomes unavailable, likely due to a server outage.
+### presenceUpdate
+##### Emitted whenever a guild member's presence changes, or they change one of their details.
 
 ```js
-// PARAMETER    TYPE          DESCRIPTION
-// guild        Guild         The guild that has become unavailable
+// PARAMETER    TYPE               DESCRIPTION
+// oldMember    GuildMember        The member before the presence update
+// newMember    GuildMember        The member after the presence update
 
-client.on("guildUnavailable", function(guild){
-    console.error(`a guild becomes unavailable, likely due to a server outage: ${guild}`);
-});
-```
-
-### guildUpdate
-##### Emitted whenever a guild is updated - e.g. name change.
-
-```js
-// PARAMETER     TYPE      DESCRIPTION
-// oldGuild      Guild     The guild before the update
-// newGuild      Guild     The guild after the update
-
-client.on("guildUpdate", function(oldGuild, newGuild){
-    console.error(`a guild is updated`);
+client.on("presenceUpdate", function(oldMember, newMember){
+    console.log(`a guild member's presence changes`);
 });
 ```
 
@@ -525,18 +540,7 @@ client.on("typingStop", function(channel, user){
 });
 ```
 
-### presenceUpdate
-##### Emitted whenever a guild member's presence changes, or they change one of their details.
-
-```js
-// PARAMETER    TYPE               DESCRIPTION
-// oldMember    GuildMember        The member before the presence update
-// newMember    GuildMember        The member after the presence update
-
-client.on("presenceUpdate", function(oldMember, newMember){
-    console.log(`a guild member's presence changes`);
-});
-```
+## Client Events:
 
 ### ready
 ##### Emitted when the client becomes ready to start working.
@@ -546,6 +550,8 @@ client.on("ready", function(){
 	console.log(`Logged in as ${client.user.tag}!`);
 });
 ```
+
+## Role Events:
 
 ### roleCreate
 ##### Emitted whenever a role is created.
@@ -583,6 +589,8 @@ client.on("roleUpdate", function(oldRole, newRole){
     console.error(`a guild role is updated`);
 });
 ```
+
+## User Events:
 
 ### userNoteUpdate
 ##### Emitted whenever a note is updated.
