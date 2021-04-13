@@ -11,10 +11,10 @@ Make sure you learn from this, I don't suggest copy pasting.
 
 ### Content:
 - **[Channel Events](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)**
-  -  [channelCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelCreate)
-  -  [channelDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelDelete)
-  -  [channelPinsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelPinsUpdate)
-  -  [channelUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelUpdate)
+  - [channelCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelCreate)
+  - [channelDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelDelete)
+  - [channelPinsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelPinsUpdate)
+  - [channelUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channelUpdate)
 - **[Client User Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-user-events)**
   - [clientUserGuildSettingsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#clientUserGuildSettingsUpdate)
   - [clientUserSettingsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#clientUserSettingsUpdate)
