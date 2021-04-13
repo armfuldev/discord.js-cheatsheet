@@ -44,7 +44,6 @@ If you want to just copy the code you can do so **[here](https://github.com/armf
   - [guildMemberAvailable](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberAvailable)
   - [guildMemberRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberRemove)
   - [guildMembersChunk](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMembersChunk)
-  - [guildMemberSpeaking](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberSpeaking)
   - [guildMemberUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#presenceUpdate)
   - [presenceUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildMemberUpdate)
 - **[Message Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#message-events)**
@@ -386,19 +385,6 @@ client.on("guildMemberRemove", function(member){
 
 client.on("guildMembersChunk", function(members, guild){
     console.error(`a chunk of guild members is received`);
-});
-```
-
-### guildMemberSpeaking
-##### Emitted once a guild member starts/stops speaking.
-
-```js
-// PARAMETER     TYPE                DESCRIPTION
-// member        GuildMember         The member that started/stopped speaking
-// speaking      boolean             Whether or not the member is speaking
-
-client.on("guildMemberSpeaking", function(member, speaking){
-    console.log(`a guild member starts/stops speaking: ${member.tag}`);
 });
 ```
 
