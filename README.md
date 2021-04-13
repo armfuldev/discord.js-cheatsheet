@@ -6,8 +6,8 @@
 
 ## Discord.js Cheatsheet
 
-This guide will go over all of the Discord.js events.  
-Make sure you learn from this, I don't suggest copy pasting.  
+This guide will go over all of the Discord.js events and how to use them.  
+I don't suggest just copy pasting, try implementing this with your own code, though if you want to just copy the code you can do so **[here](https://github.com/armfxl/discord.js-cheatsheet/blob/main/cheatsheet.js)**.
 
 ### Content:
 - **[Channel Events](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#channel-events)**
