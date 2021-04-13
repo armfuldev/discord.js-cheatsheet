@@ -20,6 +20,9 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [clientUserSettingsUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#clientUserSettingsUpdate)
 - **[Debug Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug-events)**
   - [debug](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#debug)
+- **[Error Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error-events)**
+  - [error](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error)
+  - [warn](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#warn)
 - **[WebSocket Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#websocket-events)**
   - [disconnect](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#disconnect)
   - [reconnecting](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#reconnecting)
@@ -28,9 +31,6 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [emojiCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiCreate)
   - [emojiDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiDelete)
   - [emojiUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#emojiUpdate)
-- **[Error Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error-events)**
-  - [error](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#error)
-  - [warn](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#warn)
 - **[Guild Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
   - [guildBanAdd](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildBanAdd)
   - [guildBanRemove](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guildBanRemove)
@@ -56,6 +56,8 @@ Make sure you learn from this, I don't suggest copy pasting.
   - [messageUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#messageUpdate)
   - [typingStart](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#typingStart)
   - [typingStop](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#typingStop)
+- **[Client Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#client-events)**
+  - [ready](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#ready)
 - **[Role Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#role-events)**
   - [roleCreate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleCreate)
   - [roleDelete](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#roleDelete)
@@ -63,7 +65,7 @@ Make sure you learn from this, I don't suggest copy pasting.
 - **[User Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#user-events)**
   - [userNoteUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#userNoteUpdate)
   - [userUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#userUpdate)
-- **[Voice Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#guild-events)**
+- **[Voice Events:](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#voice-events)**
   - [voiceStateUpdate](https://github.com/armfxl/discord.js-cheatsheet/blob/main/README.md#voiceStateUpdate)
 
 ## Channel Events:
