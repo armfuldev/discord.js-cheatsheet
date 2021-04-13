@@ -166,8 +166,8 @@ client.on("debug", function(info){
 ##### Emitted whenever the client's WebSocket encounters a connection error.
 
 ```js
-PARAMETER    TYPE     DESCRIPTION
-error        Error    The encountered error
+// PARAMETER    TYPE     DESCRIPTION
+// error        Error    The encountered error
 
 client.on("error", function(error){
     console.error(`client's WebSocket encountered a connection error: ${error}`);
@@ -355,8 +355,8 @@ client.on("guildMemberAdd", function(member){
 ##### Emitted whenever a member becomes available in a large guild.
 
 ```js
- PARAMETER     TYPE               DESCRIPTION
- member        GuildMember        The member that became available
+// PARAMETER     TYPE               DESCRIPTION
+// member        GuildMember        The member that became available
 
 client.on("guildMemberAvailable", function(member){
     console.log(`member becomes available in a large guild: ${member.tag}`);
