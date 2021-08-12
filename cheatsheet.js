@@ -299,7 +299,7 @@ client.on('presenceUpdate', function (oldMember, newMember) {
 // interaction    Interaction    The created interaction
 
 client.on('interactionCreate', function (interaction) {
-	console.log(`message is created -> ${interaction}`);
+	console.log(`interaction is created -> ${interaction}`);
 });
 
 // Message Events:

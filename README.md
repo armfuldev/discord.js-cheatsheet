@@ -455,7 +455,7 @@ client.on('presenceUpdate', function (oldMember, newMember) {
 // interaction  Interaction        The interaction which was created
 
 client.on('interactionCreate', function (interaction) {
-	console.log(`message is created -> ${interaction}`);
+	console.log(`interaction is created -> ${interaction}`);
 });
 ```
 
